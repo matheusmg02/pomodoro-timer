@@ -155,6 +155,11 @@ ul {
     color: white;
 }
 
+.play-icon {
+    width: 60px;
+    height: 60px;
+}
+
 .info-container {
     display: flex;
     justify-content: center;
