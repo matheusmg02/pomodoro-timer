@@ -6,6 +6,8 @@
 
 body {
     font-family: 'Manrope';
+    display: grid;
+    grid-template-columns: 256px auto;
 }
 
 ul {
@@ -15,7 +17,6 @@ ul {
 .menu-container {
     background-color: #F5F5F4;
     padding: 1.5rem;
-    width: 256px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -46,12 +47,19 @@ ul {
     gap: 8px;
 }
 
-.nav-container ul li {
+.nav-item-content {
     background-color: #E7E5E4;
     color: #57534E;
     font-size: 0.875rem;
     border-radius: 16px;
     padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icone {
+    fill: #57534E;
 }
 
 .focus-container {
@@ -81,4 +89,80 @@ ul {
     border-radius: 9999px;
     width: 100%;
     padding: 0.75rem;
+}
+
+.timer-container {
+    text-align: center;
+    padding: 2rem;
+}
+
+.timer-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.timer-header span{
+    font-size: 0.75rem;
+    color: #8F4B3E;
+    text-transform: uppercase;
+}
+
+.timer-header h1 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #1A1C1B;
+}
+
+.timer-header p {
+    font-size: 0.7rem;
+    font-weight: 500;
+    background-color: #E2E3E0;
+    color: #59413D;
+    padding: 0 0.75rem;
+    border-radius: 9999px;
+}
+
+.timer-clock {
+    margin-bottom: 4rem;
+}
+
+.timer-clock span {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.timer-clock p {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #57534E;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+}
+
+.clock-buttons {
+    margin-bottom: 4rem;
+}
+
+.clock-buttons button {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 100%;
+    background-color: #A9301C;
+    color: white;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.info-card {
+    background-color: #F4F4F1;
+    padding: 1.25rem;
+    border-radius: 24px;
 }
